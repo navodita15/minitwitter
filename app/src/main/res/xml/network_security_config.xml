@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <base-config cleartextTrafficPermitted="true" />
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">https://6f8a2fec-1605-4dc7-a081-a8521fad389a.mock.pstmn.io/tweets</domain>
+        <domain includeSubdomains="true">https://mobile.twitter.com/</domain>
+        <domain includeSubdomains="true">https://vignette.wikia.nocookie.net/</domain>
+        <domain includeSubdomains="true">https://twitter.com/</domain>
+        <domain includeSubdomains="true">https://images.app.goo.gl/</domain>
+    </domain-config>
+</network-security-config>

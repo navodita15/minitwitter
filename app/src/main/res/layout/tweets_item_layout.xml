@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp">
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/twitter_user_image_view"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:civ_border_color="@color/colorPrimary"
+        app:civ_border_width="2dp"
+        app:civ_shadow="false" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/twitter_username_text_view"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_toStartOf="@id/num_likes_text_view"
+        android:layout_toEndOf="@id/twitter_user_image_view"
+        android:text="@string/sample_name"
+        android:textColor="@android:color/black" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/twitter_user_handle_text_view"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/twitter_username_text_view"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toStartOf="@id/num_retweets_text_view"
+        android:layout_toEndOf="@id/twitter_user_image_view"
+        android:text="@string/sample_handle"
+        android:textColor="#657786" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/num_likes_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="10dp"
+        android:layout_toStartOf="@id/likes_image_view"
+        android:text="@string/zero"
+        android:textColor="#777777" />
+
+    <ImageView
+        android:id="@+id/likes_image_view"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="25dp"
+        android:contentDescription="@string/like_image_view"
+        android:src="@drawable/ic_fav" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/num_retweets_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/num_likes_text_view"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_toStartOf="@id/retweet_image_view"
+        android:textColor="#777777" />
+
+    <ImageView
+        android:id="@+id/retweet_image_view"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_below="@id/likes_image_view"
+        android:layout_alignParentEnd="true"
+        android:contentDescription="@string/retweet_image_view"
+        android:src="@drawable/ic_retweet" />
+
+    <TextView
+        android:id="@+id/tweets_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/twitter_user_image_view"
+        android:ellipsize="end"
+        android:layout_marginTop="10dp"
+        android:text="gussgdvbbbb"
+        android:textColor="#BF000000"
+        android:textSize="20sp"
+        android:maxLines="4" />
+
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">MiniTwitterApp</string>
+    <string name="tw_search_client">TW Search Client</string>
+    <string name="twitter_logo">twitter logo</string>
+    <string name="search_logo">search logo</string>
+    <string name="search">SEARCH</string>
+    <string name="retweet_image_view">retweet image view</string>
+    <string name="like_image_view">like image view</string>
+    <string name="zero">0</string>
+    <string name="sample_handle">\@samplehandle</string>
+    <string name="sample_name">sample name</string>
+    <string name="e_g_avengers_endgame">e.g. Avengers Endgame</string>
+    <string name="not_found">%1$s Not found</string>
+</resources>
